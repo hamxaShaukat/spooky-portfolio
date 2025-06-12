@@ -30,20 +30,34 @@ export default function Contact() {
     })
   }
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault()
+  setIsSubmitting(true)
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+  try {
+    const res = await fetch("https://formspree.io/f/xnnvdojg", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formState),
+    })
 
+    if (res.ok) {
+      setIsSubmitted(true)
+      setFormState({ name: "", email: "", message: "" })
+    } else {
+      console.error("Form submission error:", await res.text())
+    }
+  } catch (error) {
+    console.error("Error submitting form:", error)
+  } finally {
     setIsSubmitting(false)
-    setIsSubmitted(true)
-    setFormState({ name: "", email: "", message: "" })
-
-    // Reset success message after 5 seconds
     setTimeout(() => setIsSubmitted(false), 5000)
   }
+}
+
 
   return (
     <section id="contact" className="py-20 bg-black/95 relative overflow-hidden">
