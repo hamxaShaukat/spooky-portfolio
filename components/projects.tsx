@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Github, ExternalLink } from "lucide-react";
 import { FloatingSkull, SkeletonHand, Graveyard } from "./spooky-elements";
+import Image from "next/image";
 
 const projects = [
   {

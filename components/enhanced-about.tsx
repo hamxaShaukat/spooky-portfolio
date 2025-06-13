@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { SkeletonHand, BoneDecoration } from "./spooky-elements"
 import DownloadableResume from "./downloadable-resume"
+import Image from "next/image"
 
 export default function EnhancedAbout() {
  
@@ -33,7 +34,9 @@ export default function EnhancedAbout() {
                 }}
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-900/80 to-black/80 z-10"></div>
-                <img
+                <Image
+                width={100}
+                height={100}
                   src="/my-img.png"
                   alt="Developer"
                   className="w-full h-full object-cover relative z-0"
