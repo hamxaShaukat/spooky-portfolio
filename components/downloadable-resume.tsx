@@ -17,8 +17,8 @@ export default function DownloadableResume() {
 
     // Create a downloadable PDF (in real implementation, this would be your actual resume)
     const link = document.createElement("a")
-    link.href = "/resume.pdf" // Replace with actual resume file path
-    link.download = "Haunted_Developer_Resume.pdf"
+    link.href = "/Hamza_Shaukat.pdf" // Replace with actual resume file path
+    link.download = "Hamza_Shaukat_Resume.pdf"
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)

@@ -10,48 +10,30 @@ import { FloatingSkull, SkeletonHand, Graveyard } from "./spooky-elements";
 const projects = [
   {
     id: 1,
-    title: "Haunted House Marketplace",
+    title: "AI tools directory",
     description:
-      "A real estate platform for haunted properties built with Next.js and Supabase.",
-    videoId: "dQw4w9WgXcQ", // Replace with actual YouTube video ID
-    github: "https://github.com/username/haunted-house-marketplace",
-    tags: ["Next.js", "Supabase", "Tailwind CSS"],
+      "A Next.js-powered directory where users list AI tools for sale, with role-based access control (Admin/User).",
+    videoId: "rCHsX_Z9nGk", // Replace with actual YouTube video ID
+    github: "https://github.com/hamxaShaukat/ai-tools-directory-v1",
+    tags: ["Next.js", "Prisma", "Tailwind CSS", "MongoDB"],
   },
   {
     id: 2,
-    title: "Ghost Chat",
+    title: "AirBnB clone",
     description:
-      "Real-time messaging application with spectral effects using WebSockets and React.",
-    videoId: "dQw4w9WgXcQ", // Replace with actual YouTube video ID
-    github: "https://github.com/username/ghost-chat",
-    tags: ["React", "Socket.io", "Express", "MongoDB"],
+      "A full-stack Next.js application mimicking AirBnB's core functionality with 3-tier role access (Guest/Host/Admin).",
+    videoId: "XWJ-2g1s3Sk", // Replace with actual YouTube video ID
+    github: "https://github.com/hamxaShaukat/airbnb-clone",
+    tags: ["Next.js", "Prisma", "Tailwind CSS", "MongoDB"],
   },
   {
     id: 3,
-    title: "Nightmare Tracker",
+    title: "Twitter clone",
     description:
-      "A task management application with a spooky twist, featuring drag-and-drop functionality.",
-    videoId: "dQw4w9WgXcQ", // Replace with actual YouTube video ID
-    github: "https://github.com/username/nightmare-tracker",
-    tags: ["React", "Redux", "Node.js", "PostgreSQL"],
-  },
-  {
-    id: 4,
-    title: "Cursed E-Commerce",
-    description:
-      "Full-featured e-commerce platform selling cursed items with payment integration.",
-    videoId: "dQw4w9WgXcQ", // Replace with actual YouTube video ID
-    github: "https://github.com/username/cursed-ecommerce",
-    tags: ["Next.js", "Prisma", "Stripe", "TypeScript"],
-  },
-  {
-    id: 5,
-    title: "Phantom Dashboard",
-    description:
-      "Admin dashboard with haunting visualizations and analytics for supernatural data.",
-    videoId: "dQw4w9WgXcQ", // Replace with actual YouTube video ID
-    github: "https://github.com/username/phantom-dashboard",
-    tags: ["React", "D3.js", "Firebase", "Tailwind CSS"],
+      "A lightweight Next.js Twitter clone with text-only tweets, follows, and profile customization.",
+    videoId: "y5n5v_43y4I", // Replace with actual YouTube video ID
+    github: "https://github.com/hamxaShaukat/twitter-clone",
+    tags: ["Next.js", "Prisma", "Tailwind CSS", "MongoDB"],
   },
 ];
 
